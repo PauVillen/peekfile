@@ -1,4 +1,5 @@
 file="$1"
-head -n 3 "$file"
+lines="$2"
+head -n "$lines" "$file"
 echo "..."
-tail -n 3 "$file"
+tail -n "$lines" "$file"
